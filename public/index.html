@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold">Biblioteca Digital</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="/" class="hover:text-blue-200">Inicio</a>
+                    <a href="/libros.html" class="hover:text-blue-200">Libros</a>
+                    <a href="/prestamos.html" class="hover:text-blue-200">Préstamos</a>
+                    <a href="/socios.html" class="hover:text-blue-200">Socios</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto px-6 py-8">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h1 class="text-3xl font-bold text-center mb-8">Bienvenido a la Biblioteca Digital</h1>
+            
+            <!-- Sección de Destacados -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-semibold mb-4">Libros Destacados</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="libros-destacados">
+                    <!-- Los libros se cargarán dinámicamente con JavaScript -->
+                </div>
+            </section>
+
+            <!-- Sección de Servicios -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-semibold mb-4">Nuestros Servicios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <i class="fas fa-book text-3xl text-blue-600 mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">Catálogo Digital</h3>
+                        <p class="text-gray-600">Explora nuestra extensa colección de libros digitales.</p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <i class="fas fa-headphones text-3xl text-green-600 mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">Audiolibros</h3>
+                        <p class="text-gray-600">Disfruta de nuestros audiolibros y podcasts literarios.</p>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <i class="fas fa-users text-3xl text-purple-600 mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">Club de Lectura</h3>
+                        <p class="text-gray-600">Únete a nuestras actividades y clubes de lectura.</p>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-lg">
+                        <i class="fas fa-calendar-alt text-3xl text-yellow-600 mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">Eventos</h3>
+                        <p class="text-gray-600">Participa en nuestros eventos y presentaciones.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Estadísticas -->
+            <section class="bg-gray-50 rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4">Nuestra Biblioteca en Números</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-2">10,000+</div>
+                        <p class="text-gray-600">Libros Disponibles</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-600 mb-2">5,000+</div>
+                        <p class="text-gray-600">Socios Activos</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-purple-600 mb-2">1,000+</div>
+                        <p class="text-gray-600">Préstamos Mensuales</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white mt-8">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2024 Biblioteca Digital. Todos los derechos reservados.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-blue-200"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-blue-200"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-blue-200"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html> 
